@@ -1,0 +1,546 @@
+/* ============================================
+   BASE STYLES
+   ============================================ */
+body {
+    background-color: #202020;
+}
+
+main {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    letter-spacing: 0.05em;
+}
+
+h2 {
+    color: white;
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 2rem 0;
+}
+
+/* ============================================
+   HEADER / NAVBAR
+   ============================================ */
+.nav {
+    background-color: #212529 !important;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.navbar-logo {
+    height: 30px;
+    width: auto;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 1.5rem;
+}
+
+/* ============================================
+   MAIN / HERO SECTION
+   ============================================ */
+.hero-section {
+    background-color: #1a1a1a;
+    color: #fff;
+    min-height: calc(100vh - 56px);
+    padding: 3rem 0 3.5rem;
+}
+
+.hero-container {
+    max-width: 1200px;
+}
+
+.hero-content-left {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    height: 100%;
+    justify-content: center;
+    padding-left: 3rem !important;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.hero-section button {
+    align-self: center;
+    margin-top: 2rem;
+}
+
+.hero-image-right {
+    margin-top: 2rem;
+}
+
+.hero-image-frame {
+    background: radial-gradient(circle at top, rgba(255, 255, 255, 0.4), rgba(14, 14, 14, 0.8));
+    border-radius: 2.5rem;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    padding: 0.75rem;
+    width: min(520px, 100%);
+}
+
+.hero-image {
+    border-radius: 1.5rem;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* ============================================
+   SERVICES SECTION
+   ============================================ */
+.services-section {
+    background-color: #202020;
+    padding-bottom: 5rem;
+}
+
+.service-card {
+    border: none;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.card-img-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    height: 250px;
+    object-fit: cover;
+}
+
+.service-card-body {
+    padding: 1rem 1.5rem;
+    color: white;
+    min-height: 200px;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.service-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: black;
+}
+
+.service-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: black;
+}
+
+.card-blue-light {
+    background-color: #0dcaf0;
+    color: white;
+}
+
+.card-blue-dark {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.card-yellow {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+/* ============================================
+   EXPERIENCE SECTION
+   ============================================ */
+.experience-section {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image-container1 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/imfond.webp');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.background-image-container2 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.content-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.experience-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.experience-subtitle {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.experience-section .experience-title {
+    color: white;
+    text-shadow: none;
+}
+
+.experience-details {
+    background-color: #333333;
+    color: white;
+    padding: 3rem 0;
+}
+
+.detail-title {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #555555;
+    padding-bottom: 0.5rem;
+}
+
+.detail-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.values-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.values-list li {
+    display: flex;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.value-icon {
+    color: #1bfd9c;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.value-key {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* ============================================
+   TESTIMONIALS SECTION
+   ============================================ */
+.testimonials-section {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 5rem 0;
+}
+
+.testimonial-main-title {
+    margin-bottom: 1rem;
+}
+
+.testimonial-intro-text {
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.testimonial-card {
+    background-color: #2e2e2e;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    flex-grow: 1;
+}
+
+.client-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    padding: 3px;
+}
+
+.client-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.client-title {
+    font-size: 1rem;
+    color: #bdbdbd;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-text {
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.star-rating {
+    color: #ffc107;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+.contact-section {
+    background-color: #202020;
+    color: white;
+    padding: 5rem 0;
+}
+
+.contact-title {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.contact-form .form-label {
+    display: none;
+}
+
+.contact-form .form-control {
+    background-color: white;
+    color: #333;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-control::placeholder {
+    color: #6c757d;
+}
+
+.info-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.info-icon {
+    font-size: 1.5rem;
+    color: #1bfd9c;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+}
+
+.info-text {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+    background-color: #1a1a1a;
+    color: #bdbdbd;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    padding: 1rem 0;
+}
+
+footer .container {
+    max-width: 1200px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ============================================
+   COMPONENTS
+   ============================================ */
+.cta-submit-button,
+button {
+    --green: #1bfd9c;
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%, transparent 60%, rgba(27, 253, 156, 0.1) 100%);
+    border: 2px solid var(--green);
+    border-radius: 0.6em;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    color: var(--green);
+    font-family: inherit;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    line-height: 1.4em;
+    overflow: hidden;
+    padding: 0.7em 2.7em;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.cta-submit-button:hover,
+button:hover {
+    color: #82ffc9;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+
+.cta-submit-button::before,
+button::before {
+    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%, rgba(27, 253, 156, 0.1) 60%, transparent 100%);
+    content: "";
+    height: 100%;
+    left: -4em;
+    position: absolute;
+    top: 0;
+    transition: transform 0.4s ease-in-out;
+    width: 4em;
+}
+
+.cta-submit-button:hover::before,
+button:hover::before {
+    transform: translateX(15em);
+}
+
+/* ============================================
+   MEDIA QUERIES
+   ============================================ */
+@media (max-width: 991px) {
+
+    /* Hero Section */
+    .hero-section {
+        padding: 3rem 0 4rem;
+        text-align: center;
+    }
+
+    .hero-content-left {
+        padding: 1.5rem !important;
+    }
+
+    .hero-image-right {
+        margin: 2.5rem auto 0;
+    }
+
+    /* Experience Section */
+    .detail-title {
+        margin-top: 1rem;
+    }
+
+    .experience-column {
+        text-align: center;
+    }
+
+    .values-list {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .values-list li {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .detail-text {
+        text-align: left;
+    }
+
+    /* Contact Section */
+    .contact-title {
+        text-align: center !important;
+    }
+
+    .contact-form-column {
+        padding: 0 1rem;
+    }
+
+    .contact-info-column {
+        padding: 0 2rem;
+    }
+
+    .info-item {
+        justify-content: flex-start;
+    }
+
+    .info-list {
+        padding-left: 0;
+        text-align: left;
+    }
+}

@@ -1,0 +1,88 @@
+/* ==================================================================== */
+/* === Estilos dedicados a la Sección de Galería (galeria.html) === */
+/* === Se espera que este archivo se cargue DESPUÉS de styles.css === */
+/* ==================================================================== */
+
+/* Variables de Color (Tomadas de styles.css para coherencia) */
+:root {
+    --color-primary-bg: #202020;      /* Fondo principal de secciones */
+    --color-neon-green: #1bfd9c;      /* Verde neón / CTA */
+    --color-text-light: #ffffff;      /* Texto principal claro */
+    --font-primary: 'Bebas Neue', Arial, sans-serif;
+    --transition-speed: 0.3s;
+}
+
+/* 1. Estilos de la Sección de Galería */
+.gallery-section {
+    background-color: var(--color-primary-bg); 
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* 2. Estilo del Título H2 Específico de la Galería */
+/* El h2 general ya está en styles.css, pero si quieres un retoque específico: */
+.gallery-section h2 {
+    color: var(--color-text-light);
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+}
+
+/* 3. Marco de Cada Ítem de la Galería */
+.gallery-item-frame {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    /* Sombra profunda para el tema oscuro */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7); 
+    /* Transición para efectos de hover */
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease; 
+}
+
+/* Efecto Hover: Levantamiento y Sombra Neon */
+.gallery-item-frame:hover {
+    transform: translateY(-8px); 
+    /* Sombra con toque neón en hover */
+    box-shadow: 0 15px 30px rgba(27, 253, 156, 0.3);
+}
+
+/* 4. Estilo de la Imagen */
+.gallery-image {
+    width: 100%;
+    height: 300px; /* Altura fija para uniformidad visual en el grid */
+    object-fit: cover;
+    display: block;
+    transition: filter var(--transition-speed);
+}
+/* Efecto Hover: Oscurecer ligeramente la imagen */
+.gallery-item-frame:hover .gallery-image {
+    filter: brightness(80%);
+}
+
+/* 5. Pie de Foto (Caption) */
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo oscuro semi-transparente */
+    color: var(--color-text-light);
+    font-size: 1rem;
+    text-align: center;
+    font-family: var(--font-primary);
+    letter-spacing: 1px;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity var(--transition-speed) ease;
+}
+
+/* Efecto Hover: Mostrar el pie de foto */
+.gallery-item-frame:hover .image-caption {
+    opacity: 1;
+}
+
+/* Media Query: Ajustar la altura de la imagen en pantallas pequeñas */
+@media (max-width: 768px) {
+    .gallery-image {
+        height: 250px;
+    }
+}

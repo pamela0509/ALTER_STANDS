@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alter Stands | Galería</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="./img/Logo.png" alt="Logo" class="navbar-logo me-2">
+                    <span style="color: white;">Alter Stands</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#expe">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="experience-section" id="expe">
+            <div class="background-image-container2">
+                <div class="overlay"></div>
+                <div class="content-wrapper" data-aos="zoom-in">
+                    <h2 class="experience-title">Galería de imágenes</h2>
+                    <button href="galeria.html#con">Cotiza Ya</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <body>
+        <section class="gallery-section py-5">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item-frame">
+                            <img src="./img/render1.webp" alt="Stand publicitario para eventos"
+                                class="img-fluid gallery-image" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item-frame">
+                            <img src="./img/im1.webp" alt="Stand en color azul y blanco" class="img-fluid gallery-image"
+                                loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item-frame">
+                            <img src="./img/im2.webp" alt="Stand temático deportivo NFL" class="img-fluid gallery-image"
+                                loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item-frame">
+                            <img src="./img/im3.webp" alt="Stand en color negro y amarillo"
+                                class="img-fluid gallery-image" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item-frame">
+                            <img src="./img/imfond.webp" alt="Stand de exhibición de tecnología"
+                                class="img-fluid gallery-image" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item-frame">
+                            <img src="https://via.placeholder.com/600x400/1bfd9c/000000?text=EJEMPLO+DE+STAND+6"
+                                alt="Stand de muestra" class="img-fluid gallery-image" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact-section py-5" id="con">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 contact-form-column">
+                        <h2 class="contact-title text-center text-lg-start">Contactanos YA!</h2>
+                        <form action="#" method="POST" class="contact-form">
+                            <div class="form-group mb-4">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre de la Empresa"
+                                    required>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="contacto" class="form-label">Número de Contacto</label>
+                                <input type="tel" class="form-control" id="contacto" placeholder="Número de Contacto"
+                                    required>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="5" placeholder="Mensaje"
+                                    required></textarea>
+                            </div>
+                            <div class="text-center text-lg-start mt-4">
+                                <button type="submit" class="cta-submit-button"> Enviar </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-6 contact-info-column mt-5 mt-lg-0">
+                        <h2 class="contact-title text-center text-lg-start">Datos de Contacto</h2>
+                        <div class="info-list">
+                            <div class="info-item mb-3">
+                                <span class="info-icon">📍</span>
+                                <p class="info-text">Acapulco, CDMX, Querétaro, Monterrey y Cancún</p>
+                            </div>
+                            <div class="info-item mb-3">
+                                <span class="info-icon">📞</span>
+                                <p class="info-text">55 85 26 13 10</p>
+                            </div>
+                            <div class="info-item mb-3">
+                                <span class="info-icon">📧</span>
+                                <p class="info-text">hola@renta-stands.mx</p>
+                            </div>
+                            <div class="info-item mb-3">
+                                <span class="info-icon">🌐</span>
+                                <p class="info-text">www.renta-stands.com.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container text-center py-3">
+                <p class="mb-0">Todos los derechos reservados © Alter Stands 2023</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
